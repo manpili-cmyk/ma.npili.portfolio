@@ -1,0 +1,218 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navigation */
+nav {
+  background-color: #007BFF;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e6f0ff;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Project cards */
+.project-card {
+  background-color: white;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project-card img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007BFF;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #007BFF;
+  color: white;
+  margin-top: 30px;
+}
+
+/* ------------------------------ */
+/* AESTHETIC ABOUT PAGE STYLING   */
+/* ------------------------------ */
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.about-image img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 4px solid #007BFF;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.about-text h2 {
+  font-size: 30px;
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-card {
+    margin: 15px 0;
+  }
+
+  /* About page mobile layout */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* HERO SECTION (already added earlier, keep it if you like) */
+.hero {
+  background: linear-gradient(to bottom right, #007BFF, #4da3ff);
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* PREVIEW SECTION */
+.preview {
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.preview-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.preview-card h3 {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.preview-card p {
+  color: #444;
+}
+
+/* Section title */
+.section-title {
+  font-size: 28px;
+  text-align: center;
+  color: #007BFF;
+  margin-top: 20px;
+}
