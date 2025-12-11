@@ -1,4 +1,6 @@
-
+/* ------------------------------ */
+/* RESET & GENERAL STYLES         */
+/* ------------------------------ */
 * {
   margin: 0;
   padding: 0;
@@ -6,16 +8,19 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #0d0d0d; /* Dark background for neon effect */
-  color: #fff;
+  background-color: black; /* dark background for neon effect */
+  color: white;
 }
 
+/* ------------------------------ */
+/* NAVIGATION                     */
+/* ------------------------------ */
 nav {
-  background-color: #1a1a1a;
+  background-color: black;
   padding: 10px 20px;
-  box-shadow: 0 0 15px #ff33cc;
+  box-shadow: 0 0 15px hotpink;
 }
 
 nav ul {
@@ -27,58 +32,68 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #ff66cc;
+  color: violet;
   font-weight: bold;
   font-size: 1.1rem;
   transition: 0.3s;
-  text-shadow: 0 0 5px #ff66cc, 0 0 10px #ff33cc;
+  text-shadow: 0 0 5px violet, 0 0 10px hotpink;
 }
 
 nav a:hover,
 nav a.active {
-  color: #ff33cc;
-  text-shadow: 0 0 15px #ff33cc, 0 0 25px #ff66cc, 0 0 40px #ff99ff;
+  color: hotpink;
+  text-shadow: 0 0 15px hotpink, 0 0 25px violet, 0 0 40px pink;
 }
 
+/* ------------------------------ */
+/* HERO SECTION                   */
+/* ------------------------------ */
 .hero {
-  background: linear-gradient(135deg, #ff33cc, #ff66cc, #ff99ff);
+  background-color: black; /* changed to black */
   text-align: center;
   padding: 80px 20px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
-  box-shadow: 0 0 20px #ff33cc inset, 0 0 40px #ff66cc inset;
+  box-shadow: 0 0 20px hotpink inset, 0 0 40px violet inset;
 }
 
 .hero-content h1 {
   font-size: 50px;
   margin-bottom: 15px;
-  color: #ff33cc;
-  text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff66cc, 0 0 30px #ff99ff;
+  color: hotpink;
+  text-shadow: 0 0 10px hotpink, 0 0 20px violet, 0 0 30px pink;
   animation: neonPulse 2s infinite;
 }
 
 .hero-content p {
   font-size: 18px;
   opacity: 0.9;
-  color: #ff99ff;
-  text-shadow: 0 0 5px #ff33cc;
+  color: pink;
+  text-shadow: 0 0 5px hotpink;
 }
 
+/* Neon Pulse Animation */
 @keyframes neonPulse {
   0%, 100% {
-    text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff66cc, 0 0 30px #ff99ff;
+    text-shadow: 0 0 10px hotpink, 0 0 20px violet, 0 0 30px pink;
   }
   50% {
-    text-shadow: 0 0 20px #ff33cc, 0 0 30px #ff66cc, 0 0 50px #ff99ff;
+    text-shadow: 0 0 20px hotpink, 0 0 30px violet, 0 0 50px pink;
   }
 }
 
+/* ------------------------------ */
+/* MAIN CONTENT                   */
+/* ------------------------------ */
 main {
   padding: 20px;
   max-width: 1000px;
   margin: auto;
 }
 
+/* ------------------------------ */
+/* PROJECT / PREVIEW CARDS        */
+/* ------------------------------ */
 .preview-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -88,40 +103,44 @@ main {
 
 .preview-card,
 .project-card {
-  background-color: #1a1a1a;
+  background-color: black;
   padding: 20px;
   border-radius: 15px;
   text-align: center;
-  border: 2px solid #ff33cc;
-  box-shadow: 0 0 10px #ff33cc, 0 0 20px #ff66cc;
+  border: 2px solid hotpink;
+  box-shadow: 0 0 10px hotpink, 0 0 20px violet;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .preview-card h3,
 .project-card h3 {
-  color: #ff33cc;
+  color: hotpink;
   margin-bottom: 10px;
-  text-shadow: 0 0 5px #ff33cc, 0 0 10px #ff66cc;
+  text-shadow: 0 0 5px hotpink, 0 0 10px violet;
 }
 
 .preview-card p,
 .project-card p {
-  color: #ff99ff;
+  color: pink;
 }
 
 .preview-card:hover,
 .project-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 0 20px #ff33cc, 0 0 40px #ff66cc, 0 0 60px #ff99ff;
+  box-shadow: 0 0 20px hotpink, 0 0 40px violet, 0 0 60px pink;
 }
 
+/* Project images */
 .project-card img {
   max-width: 100%;
   border-radius: 10px;
-  border: 2px solid #ff33cc;
-  box-shadow: 0 0 10px #ff33cc;
+  border: 2px solid hotpink;
+  box-shadow: 0 0 10px hotpink;
 }
 
+/* ------------------------------ */
+/* CONTACT FORM                   */
+/* ------------------------------ */
 form {
   display: flex;
   flex-direction: column;
@@ -132,33 +151,36 @@ form input,
 form textarea {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ff33cc;
-  background-color: #1a1a1a;
-  color: #fff;
+  border: 1px solid hotpink;
+  background-color: black;
+  color: white;
 }
 
 form input::placeholder,
 form textarea::placeholder {
-  color: #ff99ff;
+  color: pink;
 }
 
 form button {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #ff33cc;
-  color: #fff;
+  background-color: hotpink;
+  color: white;
   font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 0 10px #ff33cc, 0 0 20px #ff66cc;
+  box-shadow: 0 0 10px hotpink, 0 0 20px violet;
   transition: 0.3s;
 }
 
 form button:hover {
-  background-color: #ff66cc;
-  box-shadow: 0 0 20px #ff33cc, 0 0 40px #ff66cc, 0 0 60px #ff99ff;
+  background-color: violet;
+  box-shadow: 0 0 20px hotpink, 0 0 40px violet, 0 0 60px pink;
 }
 
+/* ------------------------------ */
+/* ABOUT PAGE                     */
+/* ------------------------------ */
 .about-container {
   display: flex;
   align-items: center;
@@ -166,9 +188,9 @@ form button:hover {
   max-width: 1000px;
   margin: 40px auto;
   padding: 20px;
-  background: #1a1a1a;
+  background: black;
   border-radius: 15px;
-  box-shadow: 0 0 15px #ff33cc, 0 0 25px #ff66cc;
+  box-shadow: 0 0 15px hotpink, 0 0 25px violet;
 }
 
 .about-image img {
@@ -176,33 +198,39 @@ form button:hover {
   height: 260px;
   object-fit: cover;
   border-radius: 15px;
-  border: 4px solid #ff33cc;
-  box-shadow: 0 0 10px #ff33cc, 0 0 20px #ff66cc;
+  border: 4px solid hotpink;
+  box-shadow: 0 0 10px hotpink, 0 0 20px violet;
 }
 
 .about-text h2 {
   font-size: 30px;
-  color: #ff33cc;
+  color: hotpink;
   margin-bottom: 10px;
-  text-shadow: 0 0 10px #ff33cc, 0 0 20px #ff66cc;
+  text-shadow: 0 0 10px hotpink, 0 0 20px violet;
 }
 
 .about-text p {
   margin-bottom: 15px;
-  color: #ff99ff;
+  color: pink;
   line-height: 1.7;
 }
 
+/* ------------------------------ */
+/* FOOTER                         */
+/* ------------------------------ */
 footer {
   text-align: center;
   padding: 15px;
-  background-color: #1a1a1a;
-  color: #ff66cc;
-  text-shadow: 0 0 5px #ff33cc, 0 0 10px #ff66cc;
-  border-top: 2px solid #ff33cc;
+  background-color: black;
+  color: violet;
+  text-shadow: 0 0 5px hotpink, 0 0 10px violet;
+  border-top: 2px solid hotpink;
   margin-top: 30px;
 }
 
+/* ------------------------------ */
+/* RESPONSIVE DESIGN              */
+/* ------------------------------ */
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
